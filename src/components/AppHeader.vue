@@ -40,27 +40,33 @@
             </div>
         </section>
         <section class="hero_section">
-            <div class="hero text-white">
-                <nav class="container_main nav_layout d-flex align-items-center">
-                    <div class="nav_logo">
-                        <img src="../assets/logo.svg" alt="">
-                    </div>
-                    <div class="nav_links">
-                        <ul>
-                            <li v-for="link in links">
-                                <a href="">{{link}}</a>
-                            </li>
-                            <button  class="my_button-fill"> GET IN TOUCH </button>
-                        </ul>
-                    </div>
-                </nav>
-                <div class="hero_content container_hero">
-                    <div class="text-center">
-                        <h1 class="title">Lead ~ Customer</h1>
-                        <span>Succesful strategies require data analysis, creativity and customer focus, taking advantage of the lastest technologies to offer excellent services.</span>
-                        <div class="buttons mt-5">
-                            <button  class="text-white my_button-fill me-3"> GET IN TOUCH </button>
-                            <button  class="text-white my_button"> READ MORE</button>
+            <div class="background_image">
+                <div class="image_container">
+                    <img src="../assets/hero-image.png" alt="">
+                </div>
+                <div class="hero text-white">
+                    <nav class="container_main nav_layout d-flex align-items-center">
+                        <div class="nav_logo">
+                            <img src="../assets/logo.svg" alt="">
+                        </div>
+                        <div class="nav_links">
+                            <ul>
+                                <li v-for="link in links">
+                                    <a href="">{{link}}</a>
+                                </li>
+                                <button  class="my_button-fill"> GET IN TOUCH </button>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="hero_content container_hero">
+                        <div class="text-center">
+                            <h1 class="title">Lead ~ Customer</h1>
+                            <span>Succesful strategies require data analysis, creativity and customer focus, taking advantage of the lastest technologies to offer excellent services.</span>
+                            <div class="buttons mt-5">
+                                <button  class="text-white my_button-fill me-3"> GET IN TOUCH </button>
+                                <button  class="text-white my_button"> READ MORE</button>
+    
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -74,8 +80,20 @@
         background-color: #21333E;
         padding: 10px;
     }
+    .background_image{
+      position: relative;
+      .image_container{
+        position: absolute;
+        top: 0; bottom: 0; left: 0; right: 0; 
+        filter: brightness(0.2);
+        pointer-events: none;
+        z-index: -200;
+        img{
+            width: 100%;
+        }
+      }
+    }
     .hero{
-        background-color: black;
         .nav_layout{
             padding-top: 20px;
             justify-content: space-between;
@@ -95,8 +113,7 @@
             }
         }
         .hero_content{
-            margin-top: 200px;
-            padding: 50px 0;
+            padding: 250px 0;
             h1{
                 font-size: 80px;
                 font-weight: 900;
