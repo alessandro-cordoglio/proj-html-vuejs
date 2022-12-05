@@ -2,3 +2,65 @@
 IMPORT BOOTSTRAP
 ----------------*/
 @import "/node_modules/bootstrap/scss/bootstrap";
+
+/* MIXINS */
+@mixin reset-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+@mixin link_reset {
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+}
+@mixin button-reset {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    &:hover{
+        filter: brightness(0.5);
+    }
+}
+@mixin my_container($size) {
+    max-width: $size;
+    margin: auto;
+}
+
+/* VARIABLES */
+    /* container size */
+    $main_c: 1200px;
+    $hero_c: 900px;
+    $smaller_c: 1400px;
+    /* colours */
+    :root{
+        --section1: #EEF4ED;
+        --section2: #111117;
+    }
+
+/* LAYOUT */ 
+.container_main{
+    @include my_container($main_c)
+}
+.container_hero{
+    @include my_container($hero_c)
+}
+.container_smaller{
+    @include my_container($smaller_c)
+}
+
+
+
+/* HEADER-COMPONENTS */
+.header_info{
+    @include link_reset;
+    .social_component{
+        a{
+            margin-left: 35px;
+            &:first-child{
+                margin-left: 20px;
+            }
+        }
+    }
+}
