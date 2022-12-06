@@ -67,12 +67,22 @@ body{
     color: #068a8a;
     padding: 5px 10px;
     border-radius: 5px ;
-    background-color: #B7DBE2;
+    background: rgba($color: #078384, $alpha: 0.2)
   }
 /* reset button layout */
 button{
     padding: 0;
 }
+    /* shared components */
+    .did{
+        color: #088384;
+        font-weight: bold;
+    }
+    h2{
+        font-size: 60px;
+        color: black;
+        font-weight: bold;
+    }
     /* nav */
     .nav_layout{
         ul{

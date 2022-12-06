@@ -76,6 +76,91 @@
                     </div>
                 </div>
         </section>
+
+        <section class="services_section">
+            <div class="container_main">
+                <span class="did">OUR BUSINESS AREA</span>
+                <h2 class="mt-4 mb-4">Excellence in <span class="fancy_word">Services</span> </h2>
+                <div class="d-flex justify-content-between">
+                        <span class="col-9">We are leaders in providing consultancy services with a set of cutting-edge technologies and a team of experienced and renowned professionals. These are some options that you can hire</span>
+                        <button class="col my_button text-white">SEE ALL</button>
+                 </div>
+                 <div class="row mt-5 service_card_container">
+                    <div class="col-4 service_card">
+                        <div class="card_pic">
+                            <i class="fa-solid fa-network-wired"></i>
+                        </div>
+                        <div class="card_title">
+                            <h5>Audit & Assurance</h5>
+                        </div>
+                        <div class="card_text mb-3">
+                            <span>Lorem ipsum dolor sit amet consecteur adipiscing elit. </span>
+                        </div>
+                        <button class="my_button text-white">READ MORE</button>
+                    </div>
+                    <div class="col-4 service_card">
+                        <div class="card_pic">
+                            <i class="fa-solid fa-briefcase"></i>
+                        </div>
+                        <div class="card_title">
+                            <h5>Financial Advisory</h5>
+                        </div>
+                        <div class="card_text mb-3">
+                            <span>Lorem ipsum dolor sit amet consecteur adipiscing elit. </span>
+                        </div>
+                        <button class="my_button text-white">READ MORE</button>
+                    </div>
+                    <div class="col-4 service_card">
+                        <div class="card_pic">
+                            <i class="fa-solid fa-chart-simple"></i>
+                        </div>
+                        <div class="card_title">
+                            <h5>Analytics and M&A</h5>
+                        </div>
+                        <div class="card_text mb-3">
+                            <span>Lorem ipsum dolor sit amet consecteur adipiscing elit. </span>
+                        </div>
+                        <button class="my_button text-white">READ MORE</button>
+                    </div>
+                    <div class="col-4 service_card">
+                        <div class="card_pic">
+                            <i class="fa-solid fa-plane-departure"></i>
+                        </div>
+                        <div class="card_title">
+                            <h5>Middle Marketing</h5>
+                        </div>
+                        <div class="card_text mb-3">
+                            <span>Lorem ipsum dolor sit amet consecteur adipiscing elit. </span>
+                        </div>
+                        <button class="my_button text-white">READ MORE</button>
+                    </div>
+                    <div class="col-4 service_card">
+                        <div class="card_pic">
+                            <i class="fa-solid fa-globe"></i>
+                        </div>
+                        <div class="card_title">
+                            <h5>Legal Consulting</h5>
+                        </div>
+                        <div class="card_text mb-3">
+                            <span>Lorem ipsum dolor sit amet consecteur adipiscing elit. </span>
+                        </div>
+                        <button class="my_button text-white">READ MORE</button>
+                    </div>
+                    <div class="col-4 service_card">
+                        <div class="card_pic">
+                            <i class="fa-solid fa-inbox"></i>
+                        </div>
+                        <div class="card_title">
+                            <h5>Regulatory risk</h5>
+                        </div>
+                        <div class="card_text mb-3">
+                            <span>Lorem ipsum dolor sit amet consecteur adipiscing elit. </span>
+                        </div>
+                        <button class="my_button text-white">READ MORE</button>
+                    </div>
+                 </div>
+            </div>
+        </section>
     </main>
 </template>
 
@@ -96,6 +181,10 @@
                 padding-bottom: 65px;
                 border-radius: 10px;
                 background-color: white;
+                &:hover{
+                    position: relative;
+                    bottom: 20px;
+                }
                 .propic{
                     background-color: #B7DBE2;
                     padding: 10px;
@@ -123,15 +212,6 @@
         padding-left: 380px ;
         padding-top: 200px;
         width: 50%;
-        .did{
-            color: #088384;
-            font-weight: bold;
-        }
-        h2{
-            font-size: 50px;
-            color: black;
-            font-weight: bold;
-        }
         .badges_container{
             h3{
                 font-size: 25px;
@@ -157,5 +237,54 @@
         }
       }
         
+    }
+    .services_section{
+        padding-top: 150px ;
+        padding-bottom: 150px;
+        background-color: var(--section2);
+        color: rgba(255, 255, 255, 0.699);
+        h2{
+            color: white;
+            .fancy_word{
+                color: white;
+            }
+        }
+        .my_button{
+            max-width: fit-content;
+        }
+        .service_card_container{
+            .service_card{
+                width: calc((100%/3) - 25px);
+                margin-right: 25px ;
+                padding: 40px 55px ;
+                border-radius: 10px;
+                background: rgba($color: #2e2929, $alpha: 0.2);
+                margin-top: 25px;
+                &:hover{
+                    position: relative;
+                    bottom: 20px;
+                    i{
+                        color: white;
+                    }
+                }
+            }
+            i{
+                color: #088384;
+                font-size: 35px;
+                margin-bottom: 20px;
+            }
+            h5{
+                margin-top: 10px;
+                font-size: 25px;
+                margin-bottom: 20px;
+                color: white;
+                font-weight: bold;
+            }
+            button{
+                margin-top: 25px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+        }
     }
 </style>
