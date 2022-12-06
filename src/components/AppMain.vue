@@ -161,6 +161,135 @@
                  </div>
             </div>
         </section>
+
+        <section class="price_section">
+            <div class="container_main">
+                <div class="text-center small_container">
+                    <span class="did">MONTHLY PLANS</span>
+                    <h2 class="mt-4 mb-4"><span class="fancy_word">Pricing</span> Table</h2>
+                    <span>We can help you deliver and execute your future, wherever you compete, using the latest technologies, from strategy development to implementation</span>
+                </div>
+                <div class="plans_container d-flex">
+                    <div class="plan_card col-4">
+                        <div class="text-center">
+                            <div class="plan_pic">
+                                <i class="fa-solid fa-rocket"></i>
+                            </div>
+                            <h5>Standard</h5>
+                            <span class="price_text">$<span class="price">490</span> / mo</span>
+                        </div>
+                        <div class="plan_list">
+                            <ul class="list_reset">
+                                <li class="d-flex justify-content-between">Standard accounting
+                                    <div>
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                </li>
+                                <li class="d-flex justify-content-between">Platform Access
+                                    <div>
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                </li>
+                                <li class="d-flex justify-content-between">Business Orientation
+                                    <div>
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </div>
+                                </li>
+                                <li class="d-flex justify-content-between">Dedicated Consultant
+                                    <div>
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </div>
+                                </li>
+                                <li class="d-flex justify-content-between">Personal Assistance
+                                    <div>
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="plan_card most_popular col-4 relative">
+                            <div class="absolute popular_tag">
+                                Most Popular
+                            </div>
+                        <div class="text-center">
+                            <div class="plan_pic">
+                                <i class="fa-solid fa-briefcase"></i>
+                            </div>
+                            <h5>Professional</h5>
+                            <span class="price_text">$<span class="price">890</span> / mo</span>
+                        </div>
+                        <div class="plan_list">
+                            <ul class="list_reset">
+                                <li class="d-flex justify-content-between">Standard accounting
+                                    <div>
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                </li>
+                                <li class="d-flex justify-content-between">Platform Access
+                                    <div>
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                </li>
+                                <li class="d-flex justify-content-between">Business Orientation
+                                    <div>
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                </li>
+                                <li class="d-flex justify-content-between">Dedicated Consultant
+                                    <div>
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </div>
+                                </li>
+                                <li class="d-flex justify-content-between">Personal Assistance
+                                    <div>
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="plan_card col-4">
+                        <div class="text-center">
+                            <div class="plan_pic">
+                                <i class="fa-solid fa-gem"></i>
+                            </div>
+                            <h5>Ultimate</h5>
+                            <span class="price_text">$<span class="price">1.390</span> / mo</span>
+                        </div>
+                        <div class="plan_list">
+                            <ul class="list_reset">
+                                <li class="d-flex justify-content-between">Standard accounting
+                                    <div>
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                </li>
+                                <li class="d-flex justify-content-between">Platform Access
+                                    <div>
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                </li>
+                                <li class="d-flex justify-content-between">Business Orientation
+                                    <div>
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                </li>
+                                <li class="d-flex justify-content-between">Dedicated Consultant
+                                    <div>
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                </li>
+                                <li class="d-flex justify-content-between">Personal Assistance
+                                    <div>
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 </template>
 
@@ -284,6 +413,65 @@
                 margin-top: 25px;
                 padding-top: 10px;
                 padding-bottom: 10px;
+            }
+        }
+    }
+    .price_section{
+        padding: 150px;
+        background-color: var(--section1);
+        .small_container{
+            padding: 0px 250px ;
+        }
+        .plans_container{
+            margin-top: 50px;
+            .popular_tag{
+                padding: 5px;
+                border-radius: 0px 25px 25px 0px;
+                background-color: #28b3b3;
+                color: white;
+                right: 310px;
+                top: 30px ;
+            }
+            .most_popular{
+                margin-top: 0px !important;
+                margin-bottom: 0px !important;
+                padding-top: 80px !important;
+                padding-bottom: 80px !important;
+            }
+            .plan_card{
+                margin-right: 25px;
+                background-color: white ;
+                border-radius: 10px;
+                padding: 40px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+          
+                .plan_pic{
+                    color: #088384;
+                    font-size: 40px;
+                }
+                h5{
+                    font-size: 30px;
+                    color: black;
+                    font-weight: bold;
+                }
+                .price_text{
+                    color: #088384;
+                    font-size: 20px;
+                    .price{
+                        font-size: 40px;
+                        font-weight: bold;
+                    }
+                }
+                .plan_list{
+                    margin-top: 30px;
+                    li{
+                        margin: 20px;
+                        i{
+                            color: #088384;
+                        }
+                    }
+                }
             }
         }
     }
