@@ -77,12 +77,18 @@ body{
     left: 0;
   }
   .absolute{
-    position: absolute;
-    
+    position: absolute; 
+  }
+  .active_{
+    display: block;
+  }
+  .hidden_{
+    display: none;
   }
 /* reset button layout */
 button{
     padding: 0;
+    max-width: max-content;
 }
 
     /* shared components */

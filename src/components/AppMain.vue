@@ -290,6 +290,59 @@
                 </div>
             </div>
         </section>
+
+        <section class="news_section">
+            <div class="container_main">
+                <span class="did">OUR EDITORIAL CONTENT</span>
+                <h2 class="mt-4 mb-4">Latest <span class="fancy_word">News</span> </h2>
+                <div class="d-flex justify-content-between align-items-center">
+                        <span class="col-9">Every week we publish about what is best in the business world</span>
+                        <button class="col my_button-fill text-white">SEE ALL</button>
+                 </div> 
+                 <div class="news_card_container d-flex">
+                    <div class="news_card col-4 relative">
+                        <img src="../assets/news-1.jpg" alt="">
+                        <div class="absolute news_author">
+                            <i class="fa-regular fa-user me-1"></i> Andrea Miller
+                            <i class="fa-regular fa-clock ms-3 me-1"></i> 2 Days Ago
+                        </div>
+                        <div class="absolute news_title">
+                            <span>Increasing creativity is possible for everyone</span>
+                        </div>
+                        <div class="news_text absolute">
+                            Lorem ipsum dolo sit amet, consectetur adipiscing elit.
+                        </div>
+                    </div>
+                    <div class="news_card col-4 relative">
+                        <img src="../assets/news-2.jpg" alt="">
+                        <div class="absolute news_author">
+                            <i class="fa-regular fa-user me-1"></i> Andrea Miller
+                            <i class="fa-regular fa-clock ms-3 me-1"></i> 2 Days Ago
+                        </div>
+                        <div class="absolute news_title">
+                            <span>Increasing creativity is possible for everyone</span>
+                        </div>
+                        <div class="news_text absolute">
+                            Lorem ipsum dolo sit amet, consectetur adipiscing elit.
+                        </div>
+                    </div>
+                    <div class="news_card col-4 relative">
+                        <img src="../assets/news-3.jpg" alt="">
+                        <div class="absolute news_author">
+                            <i class="fa-regular fa-user me-1"></i> Andrea Miller
+                            <i class="fa-regular fa-clock ms-3 me-1"></i> 2 Days Ago
+                        </div>
+                        <div class="absolute news_title">
+                            <span>Increasing creativity is possible for everyone</span>
+                        </div>
+                        <div class="news_text absolute">
+                            Lorem ipsum dolo sit amet, consectetur adipiscing elit.
+                        </div>
+                    </div>
+
+                 </div>
+            </div>
+        </section>
     </main>
 </template>
 
@@ -445,7 +498,10 @@
                 padding: 40px;
                 margin-top: 20px;
                 margin-bottom: 20px;
-          
+                &:hover{
+                    position: relative;
+                    bottom: 10px;
+                }
                 .plan_pic{
                     color: #088384;
                     font-size: 40px;
@@ -472,6 +528,60 @@
                         }
                     }
                 }
+            }
+        }
+    }
+    .news_section{
+        padding-top: 150px;
+        button{
+            padding-top: 10px;
+            padding-bottom: 10px ;
+        }
+        .news_card_container{
+            margin-top: 80px;
+            img{
+                max-width: 100%;
+                border-radius: 10px;
+                filter: brightness(0.7);
+            }
+            .news_card{
+                margin-right: 35px;
+                .news_author{
+                    bottom: 330px;
+                    left: 50px ;
+                    font-size: 20px;
+                    color: white;
+                    display: none;
+
+                }
+                .news_text{
+                    color: white;
+                    bottom: 50px;
+                    padding-left: 30px;
+                    padding-right: 30px;
+                    text-align: center;
+                    display: none;
+                }
+               .news_title{
+                padding-left: 30px;
+                padding-right: 30px;
+                bottom: 30px;
+                color: white;
+                font-weight: bold;
+                font-size: 30px;
+                text-align: center;
+               }
+             &:hover{
+                img{
+                    filter: blur(4px) brightness(0.7);
+                }
+                .news_author, .news_text{
+                    display: block;
+                }
+                .news_title{
+                    bottom: 150px;
+                }
+             }
             }
         }
     }
