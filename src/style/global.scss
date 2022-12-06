@@ -51,6 +51,7 @@ IMPORT BOOTSTRAP
  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
 body{
     font-family: 'Roboto', sans-serif;
+    color: #616E76;
 }
 /* LAYOUT */ 
 .container_main{
@@ -62,21 +63,27 @@ body{
 .container_smaller{
     @include my_container($smaller_c)
 }
+.fancy_word{
+    color: #068a8a;
+    padding: 5px 10px;
+    border-radius: 5px ;
+    background-color: #B7DBE2;
+  }
 /* reset button layout */
 button{
     padding: 0;
 }
     /* nav */
-.nav_layout{
-    ul{
-        @include reset-list;
-        @include link_reset;
-        display: flex;
-        li{ 
-            padding: 13px ;
+    .nav_layout{
+        ul{
+            @include reset-list;
+            @include link_reset;
+            display: flex;
+            li{ 
+                padding: 13px ;
+            }
         }
     }
-}
     /* button */
     .my_button{
         @include button-reset;
@@ -86,12 +93,12 @@ button{
             background-color: var(--elements);
         }
     }
-.my_button-fill{
-    @include button-reset;
-    @include button_project;
-    background-color:  var(--elements);
-  
-}
+    .my_button-fill{
+        @include button-reset;
+        @include button_project;
+        background-color:  var(--elements);
+    }
+
 /* HEADER-COMPONENTS */
 .header_info{
     @include link_reset;
