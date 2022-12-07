@@ -343,6 +343,27 @@
                  </div>
             </div>
         </section>
+
+        <section class="newsletter_section">
+            <div class="container_smaller d-flex">
+                <div class="col-6">
+                    <span class="did">NEWSLETTER</span>
+                    <h2 class="mt-4 mb-4 text-white"><span class="fancy_word text-white">Know</span> First</h2>
+                    <span class="newsletter_info">Follow closely and receive content about our company and the news of the current market.</span>
+                </div>
+                <div class="col-6">
+                    <form class="newsletter_form" action="#">
+                        <div class="name_input">
+                            <input type="text" name="Nome" placeholder="Name">
+                        </div>
+                        <div class="email_input">
+                            <input type="text" name="email" placeholder="Email">
+                        </div>
+                        <button class="my_button-fill text-white">SUBSCRIVE</button>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
 </template>
 
@@ -533,6 +554,7 @@
     }
     .news_section{
         padding-top: 150px;
+        padding-bottom: 150px;
         button{
             padding-top: 10px;
             padding-bottom: 10px ;
@@ -573,15 +595,42 @@
                }
              &:hover{
                 img{
-                    filter: blur(4px) brightness(0.7);
+                    filter: blur(2px) brightness(0.4);
                 }
-                .news_author, .news_text{
+                .news_author, .news_text{    
                     display: block;
                 }
                 .news_title{
                     bottom: 150px;
                 }
              }
+            }
+        }
+    }
+    .newsletter_section{
+        padding-top: 150px;
+        padding-bottom: 150px;
+        background-image: url(../assets/bg-1.jpg);
+        .newsletter_info{
+            color: rgba(255, 255, 255, 0.699);;
+        }
+        .newsletter_form{
+            margin-left: 35px;
+            .email_input{
+                margin-top: 20px ;
+            }
+            input{
+                opacity: 0.5;
+                width: 100%;
+                padding: 15px 10px;
+                border-radius: 5px;
+                border: none;
+                font-size: 18px;
+            }
+            button{
+                margin-top: 20px;
+                padding-top: 10px;
+                padding-bottom: 10px;
             }
         }
     }
