@@ -364,6 +364,41 @@
                 </div>
             </div>
         </section>
+
+        <section class="send_message_section">
+            <div class="container_main d-flex">
+                <div class="col-8 left_message-col">
+                    <span class="did">SEND A MESSAGE</span>
+                    <h2 class="mt-4 mb-4">Get in <span class="fancy_word">Touch</span></h2>
+                    <span>We will respond to your message as soon as possible.</span>
+                    <form action="#" class="message_form">
+                        <div class="d-flex flex-wrap">
+                            <div class="col-6">
+                                <input type="text" name="Name" placeholder="Name">
+                            </div>
+                            <div class="col-6">
+                                <input type="text" name="Email" placeholder="Email">
+                            </div>
+                            <div class="col-6">
+                                <input type="number" name="Phone" placeholder="Phone">
+                            </div>
+                            <div class="col-6">
+                                <input type="text" name="info" placeholder="More info">
+                            </div>
+                            <div class="col-12">
+                                <textarea placeholder="Message"></textarea>
+                            </div>
+                            <button class="my_button-fill">SEND</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col right_message-col">
+                    <h4 class="fw-bold text-black fs-3">Example Inc.</h4>
+                    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                    <div class="mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                </div>
+            </div>
+        </section>
     </main>
 </template>
 
@@ -632,6 +667,41 @@
                 padding-top: 10px;
                 padding-bottom: 10px;
             }
+        }
+    }
+    .send_message_section{
+        padding-top: 150px ;
+        padding-bottom: 150px ;
+        .message_form{
+            margin-top: 50px;
+            .col-6{
+                width: calc(50% - 20px);
+                margin-right: 20px;
+            }
+            input{
+                width: 100%;
+                background-color: rgba($color: lightgray, $alpha: 0.2);
+                border: none;
+                padding: 20px;
+                margin-top: 20px;
+            }
+            textarea{
+                padding: 20px;
+                margin-top: 20px;
+                width: calc(100% - 20px);
+                height: 150px;
+                border: none;
+                background-color: rgba($color: lightgray, $alpha: 0.2);
+                resize: none;
+            }
+            button{
+                margin-top: 30px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+        }
+        .right_message-col{
+            margin-left: 50px;
         }
     }
 </style>
