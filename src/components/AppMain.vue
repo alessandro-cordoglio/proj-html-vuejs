@@ -396,6 +396,27 @@
                     <h4 class="fw-bold text-black fs-3">Example Inc.</h4>
                     <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
                     <div class="mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                    <div class="message_info_container">
+                        <div class="info_ d-flex align-items-center">
+                            <div class="info_pic">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <span>+1 (305) 1234-5678</span>
+                        </div>
+                        <div class="info_ d-flex align-items-center">
+                            <div class="info_pic">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <span>hello@example.com</span>
+                        </div>
+                        <div class="info_ d-flex align-items-center">
+                            <div class="info_pic">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <span>Main Avenue, 987</span>
+                        </div>
+                        <button class="my_button">VIEW MAP</button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -702,6 +723,34 @@
         }
         .right_message-col{
             margin-left: 50px;
+            .message_info_container{
+                button{
+                    margin-top: 25px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    color: #078384;
+                }
+                margin-top: 30px;
+                .info_{
+                   margin-top: 20px;
+                    span{
+                        color: #088384;
+                    }
+                    .info_pic{
+                        background: rgba($color: #078384, $alpha: 0.2);
+                        border-radius: 50%;
+                        width: 45px;
+                        height: 45px;
+                        padding-top: 12px;
+                        text-align: center;
+                        margin-right: 10px;
+                        i{
+                            color: #088384;
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
         }
     }
 </style>

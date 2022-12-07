@@ -122,6 +122,7 @@ button{
         background-color: transparent;
         &:hover{
             background-color: var(--elements);
+            color: white !important;
         }
     }
     .my_button-fill{
